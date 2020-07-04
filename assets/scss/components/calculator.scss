@@ -1,0 +1,18 @@
+.calculator-field-group {
+    max-width: 500px;
+    margin: 10px auto;
+
+    .field {
+        position: relative;
+        margin: 10px auto;
+        width: 150px;
+
+        @include tablet {
+            margin: 10px 20px;
+        }
+
+        &.number {
+            flex: 1 1 auto;
+        }
+    }
+} 

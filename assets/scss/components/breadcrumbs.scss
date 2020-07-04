@@ -1,0 +1,16 @@
+.breadcrumb-custom {
+    padding: 170px 0 145px;
+    background-image: url('../images/breadcrumb-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    @include tablet {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}

@@ -1,0 +1,105 @@
+.how-to-buy-section {
+    padding-bottom: 105px;
+    background: #f4f5f5;
+
+    .text {
+        margin: 0 auto;
+        max-width: 620px;
+        padding: 0 15px;
+        font-size: 15px;
+        line-height: 24px;
+
+        @include tablet {
+            padding: 0;
+        }
+    }
+
+    .title {
+        margin: 10px 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+    }
+}
+
+.buy-info-column {
+    padding: 20px 40px;
+
+    &:hover {
+        .buy-img-full {
+            opacity: 1;
+        }
+    }
+
+    .image-container {
+        position: relative;
+        height: 150px;
+    }
+
+    .buy-img, .buy-img-full {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .buy-img-full {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &.second-column {
+        .buy-img-full {
+            opacity: 1;
+        }
+    }
+}
+
+.buy-info-container {
+    margin: 30px auto;
+    
+    @include tablet-lg {
+        margin: 88px auto 64px;
+    }
+}
+
+.buy-info-row:hover {
+    .buy-info-column.second-column {
+        .buy-img-full {
+            opacity: 0;
+        }
+    }
+    
+    .buy-info-column.second-column:hover {
+        .buy-img-full {
+            opacity: 1;
+        }
+    }
+}
+
+.buy-info-text {
+    color: #70747c;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.exchanges-title {
+    margin: 73px 0 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+}
+
+.exchange-container {
+    max-width: 660px;
+}
+
+.exchange-column {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.exchange-img {
+    max-width: 166px;
+}

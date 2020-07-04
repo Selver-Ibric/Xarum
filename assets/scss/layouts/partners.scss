@@ -1,0 +1,29 @@
+.partners-section {
+    padding: 100px 0;
+    background: #f4f5f5;
+}
+
+.partners-title {
+    margin-bottom: 37px;
+    color: #ebcb6a;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.partner-column {
+    padding: 40px 33px;
+
+    @include tablet-lg {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.partner-img {
+    transition: transform .3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

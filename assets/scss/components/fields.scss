@@ -1,0 +1,56 @@
+.field {
+    position: relative;
+}
+
+input, select {
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 25px 10px 10px;
+    border: 0;
+    border-bottom: 1px solid rgba(36, 57, 79, 0.4);
+    outline: none;
+}
+
+.select-field {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 32px;
+        right: 20px;
+        display: block;
+        height: 8px;
+        width: 8px;
+        border: 1px solid;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+    }
+}
+
+input:focus + .input-label, 
+  .is-filled input + .input-label, 
+  .is-filled select + .input-label {
+    opacity: .75;
+    font-weight: 600;
+    transform: translate3d(0,-1.5em,0) scale3d(.8, .8, 1);
+}
+
+.input-label {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    font-size: 15px;
+    line-height: 24px;
+    transform-origin: 0 0;
+    transition: transform .2s .15s,opacity 1s,-webkit-transform .2s .15s;
+}
+
+.error-message {    
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    color: crimson;
+    font-size: 12px;
+    line-height: 19px;
+}

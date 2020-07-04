@@ -1,0 +1,104 @@
+.how-it-works-section {
+    padding: 85px 0;
+}
+
+.how-it-works-tabs {
+    .tabs, .tabs-action {
+        position: relative;
+
+        @include tablet {
+            padding-left: 240px;
+        }
+        
+        @include tablet-lg {
+            padding-left: 282px;
+        }
+    }
+
+    .nav-tabs {
+        border: 0;
+        justify-content: center;
+
+        @include tablet {
+            justify-content: flex-start;
+        }
+    }
+
+    .nav-item:last-child {
+        .nav-link {
+            margin-right: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .nav-link {
+        position: relative;
+        margin-right: 25px;
+        padding: 0;
+        border: 0;
+        color: #bec1c4;
+        font-size: 14px;
+        line-height: 22px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 11px;
+            right: -17px;
+            display: block;
+            width: 10px;
+            border-top: 1px solid #bec1c4;
+        }
+
+        &.active {
+            color: $primary;
+            font-weight: 700;
+        }
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+    .tab-img {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        display: none;
+        width: 180px;
+
+        @include tablet {
+            display: block;
+        }
+
+        @include tablet-lg {
+            left: 85px;
+        }
+    }
+
+    .tab-title {
+        margin-bottom: 17px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+
+    .tab-text {
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+}

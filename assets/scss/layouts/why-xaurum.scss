@@ -1,0 +1,74 @@
+.why-xaurum-section {
+    padding-bottom: 1px;
+    background: #f4f5f5;
+}
+
+.why-xaurum-subtitle {
+    margin-bottom: 10px;
+    color: #ebcb6a;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+}
+
+.why-xaurum-description {
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+
+    @include tablet {
+        padding: 0;
+    }
+}
+
+.why-xaurum-row {
+    margin-top: 87px;
+}
+
+.why-xaurum-column {
+    padding: 8px 40px;
+
+    .title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .description {
+        color: #70747c;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.quote-squared {
+    position: relative;
+    margin: 61px auto 71px;
+    max-width: 550px;
+    padding: 31px 40px;
+    border: 1px solid #e2e4e5;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 70px;
+        height: 50px;
+        background-color: #f4f5f5;
+        background-image: url('../images/icons/quote-icon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45px 50px;
+        transform: translate(-50%, -50%);
+    }
+}

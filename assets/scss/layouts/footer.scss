@@ -1,0 +1,130 @@
+.footer {
+    padding: 40px 0;
+    background: #1b1f26;
+    color: #5a6270;
+
+    @include tablet-lg {
+        padding: 50px 15px;
+    }
+}
+
+.footer-logo-col {
+    .logo-img {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+.footer-info-col {
+    padding: 50px 15px;
+
+    @include tablet {
+        padding: 0 15px;
+    }
+}
+
+.location-info {
+    padding-left: 31px;
+}
+
+.footer-media-col {
+    @include tablet {
+        padding-top: 50px;
+    }
+
+    @include tablet-lg {
+        padding-top: 0;
+    }
+}
+
+.list-item {
+    margin-bottom: 10px;
+    line-height: 24px;
+
+    .icon {
+        margin-right: 10px;
+        width: 21px;
+        text-align: center;
+    }
+}
+
+.info-list {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.info-list--item {
+    &:last-child {
+        .info-list--link::after {
+            display: none;
+        }
+    }
+}
+
+.info-link, .info-list--link {
+    color: inherit;
+
+    &:hover {
+        color: #4f5662;
+    }
+}
+
+.info-list--link  {
+    position: relative;
+    padding: 4px 7px;
+    font-size: 13px;
+
+    @include tablet-lg {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        right: 0;
+        display: block;
+        height: 13px;
+        border-right: 1px solid #5a6270;
+
+        @include tablet-lg {
+            height: 16px;
+        }
+    }
+}
+
+//media column
+.media-item {
+    padding-right: 15px;
+}
+
+.media-link {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #5a6270;
+    line-height: 42px;
+    text-align: center;
+
+    @include tablet-lg {
+        height: 60px;
+        width: 60px;
+        line-height: 58px;
+    }
+
+    &:hover {
+        background: rgba(90, 98, 112, .5);
+    }
+
+    .media-img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+.copyright-text {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}

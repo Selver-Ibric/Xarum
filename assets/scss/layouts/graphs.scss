@@ -1,0 +1,130 @@
+.graphs-section {
+    padding: 50px 0;
+}
+
+.graphs-row {
+    overflow: hidden;
+}
+
+.graph-content {
+    @include tablet-lg {
+        max-width: 320px;
+    }
+}
+
+.graph-title {
+    margin: 80px 0 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.graph-text {
+    color: #70747c;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.graph-image-container {
+    svg {
+        overflow: visible;
+        
+        &> g:last-child {
+            transform: translateX(10px);
+
+            @include tablet-lg {
+                transform: none;
+            }
+        }
+    } 
+}
+
+//x-axis
+.grid-fullblock {
+    &> line {
+        display: none;
+    }
+
+    g {
+        line:first-child {
+            display: none;
+        }
+
+        text {
+            transform: translateY(25px);
+            fill: rgb(190, 190, 190);
+
+            @include tablet {
+                font-size: 16px;
+                transform: translateY(40px);
+            }
+        }
+
+        &:nth-child(even) {
+            text {
+                transform: translateY(35px);
+
+                @include tablet {
+                    transform: translateY(40px);
+                }
+            }
+        }
+    }
+}
+
+//y-axis
+.grid-range {
+    &> line {
+        stroke-width: 1;
+        stroke: #f1f1f1;
+    }
+
+    g {
+        &:nth-child(1), &:nth-child(2) {
+            display: none;
+        }
+
+        line {
+            display: none;
+        }
+
+        text {
+            fill: rgb(190, 190, 190);
+            transform: translateX(35px);
+
+            @include tablet {
+                font-size: 13px;
+                transform: translateX(45px);
+            }
+        }
+    }
+}
+
+//legends
+.widget-legend {
+    transform: translate(15px, 165px) rotate(-90deg);
+
+    @include tablet-lg {
+        transform: translate(25px, 165px) rotate(-90deg);
+    }
+
+    circle {
+        display: none;
+    }
+
+    text {
+        fill: #262b32;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
+
+.brush-stackarea path {
+    stroke: #f2d361;
+}
+
+.brush-stackarea > path {
+    fill: #f2d361;
+}

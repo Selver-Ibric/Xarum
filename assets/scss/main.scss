@@ -1,0 +1,34 @@
+//abstracts
+    //mixins
+    @import 'abstracts/mixins/responsive';
+@import 'abstracts/color';
+@import 'abstracts/typography';
+
+//base
+@import 'base/base';
+@import 'base/custom-classes';
+
+//components
+@import 'components/buttons';
+@import 'components/fields';
+@import 'components/breadcrumbs';
+@import 'components/sidebar-navigation';
+@import 'components/calculator';
+
+//layouts
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/banner-slider';
+@import 'layouts/counters';
+@import 'layouts/graphs';
+@import 'layouts/partners';
+@import 'layouts/how-it-works';
+@import 'layouts/print-banner';
+@import 'layouts/why-xaurum';
+@import 'layouts/here-to-help';
+@import 'layouts/how-to-buy';
+@import 'layouts/team';
+@import 'layouts/error-page';
+
+//pages
+@import 'pages/details';

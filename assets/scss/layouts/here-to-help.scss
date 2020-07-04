@@ -1,0 +1,39 @@
+.here-to-help-section {
+    position: relative;
+    padding: 90px 40px;
+    background-color: #1b1f26;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        max-width: 1160px;
+        background-image: url('../images/help/help-section-bg.jpg');
+        background-position: right 30%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: translateX(40%);
+        z-index: 0;
+    }
+}
+
+.help-content {
+    position: relative;
+    z-index: 1;
+
+    .title {
+        margin-bottom: 40px;
+        color: $white;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+.help-banner-btn {
+    margin: 10px;
+}

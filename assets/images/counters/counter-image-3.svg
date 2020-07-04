@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="70px" viewBox="0 0 165 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="NEW-clean-nav-Copy" transform="translate(-638.000000, -699.000000)">
+            <g id="2nd-section" transform="translate(0.000000, 650.000000)">
+                <g id="Group-38" transform="translate(639.000000, 51.000000)">
+                    <g id="Group-18" transform="translate(0.000000, 32.000000)" stroke="#F6CA63" stroke-width="2">
+                        <path d="M106,5 C106,2.725 103.988235,0 101.882353,0 L76,0" id="Shape"></path>
+                        <path d="M56,5 C56,2.725 59.252,0 61.4,0 L77,0" id="Shape"></path>
+                        <path d="M78,20 C78,17.725 75.9882353,15 73.8823529,15 L48,15" id="Shape-Copy-2"></path>
+                        <path d="M28,20 C28,17.725 31.252,15 33.4,15 L49,15" id="Shape-Copy"></path>
+                        <path d="M50,35 C50,32.725 47.9882353,30 45.8823529,30 L20,30" id="Shape-Copy-14"></path>
+                        <path d="M0,35 C0,32.725 3.252,30 5.4,30 L21,30" id="Shape-Copy-13"></path>
+                        <path d="M106,35 C106,32.725 103.988235,30 101.882353,30 L76,30" id="Shape-Copy-16"></path>
+                        <path d="M56,35 C56,32.725 59.252,30 61.4,30 L77,30" id="Shape-Copy-15"></path>
+                        <path d="M163,35 C163,32.725 160.988235,30 158.882353,30 L133,30" id="Shape-Copy-18"></path>
+                        <path d="M113,35 C113,32.725 116.252,30 118.4,30 L134,30" id="Shape-Copy-17"></path>
+                        <path d="M134,20 C134,17.725 131.988235,15 129.882353,15 L104,15" id="Shape-Copy-4"></path>
+                        <path d="M84,20 C84,17.725 87.252,15 89.4,15 L105,15" id="Shape-Copy-3"></path>
+                    </g>
+                    <path d="M83.8336774,10.5015952 L92,10.5015952 C91.9990115,15.455542 88.5354249,19.7347665 83.690386,20.7680351 C78.8453471,21.8013038 73.9372828,19.3074446 71.915274,14.7849288 C69.8932652,10.2624129 71.3075387,4.94190255 75.3083081,2.02030277 C79.3090774,-0.901297007 84.8076575,-0.628963581 88.5001474,2.6736676" id="Shape" stroke="#FFFFFF" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

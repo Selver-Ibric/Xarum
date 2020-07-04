@@ -1,0 +1,103 @@
+.counters-section {
+    background: #1b1f26;
+    color: $white;
+}
+
+.main-counters {
+    padding: 50px 15px 0;
+}
+
+.counter-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: none;
+    border: 0;
+    transition: transform .3s;
+
+    &:not(.collapsed) {
+        transform: rotate(180deg);
+    }
+
+    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus {
+        background: none;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.aditional-counters {
+    background: #242c36;
+}
+
+.aditional-counters-container {
+    padding: 50px 15px;
+}
+
+.counter-column {
+    padding: 24px 15px;
+}
+
+.column-with-img {
+    .image-container {
+        margin-bottom: 20px;
+        
+        @include tablet {
+            height: 70px;
+        }
+    }
+
+    &:hover {
+        .counter-image {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
+}
+
+.counter-image {
+    max-height: 100%;
+    max-width: 220px;
+    filter: grayscale(1);
+    opacity: .1;
+    transition: filter .5s, opacity .5s;
+}
+
+.counter-label {
+    color: #ebcb6a;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.counter-value {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+
+    .unit {
+        font-size: 12px;
+        line-height: 19px;
+        vertical-align: super;
+    }
+
+    .green-arrow-unit {
+        padding-left: 10px;
+
+        &:before {
+            content: "";
+            position: relative;
+            top: -8px;
+            left: -4.5px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 7px solid #00da08;
+        }
+    }
+}
+
+.counter-arrow-icon {
+    height: 42px;
+}

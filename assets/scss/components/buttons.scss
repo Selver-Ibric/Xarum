@@ -1,0 +1,88 @@
+.btn {
+    padding: 18px 6px;
+    border-radius: 0;
+    color: #0f1a26;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: background-color .4s, border-color .4s, color .4s;
+    
+    &:hover, &:active, &:focus,
+     &:not(:disabled):not(.disabled):active, 
+     &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+        color: #0f1a26;
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid $primary;
+
+    &:hover, &:active, &:focus,
+     &:not(:disabled):not(.disabled):active, 
+     &:not(:disabled):not(.disabled):active:focus {
+        background: rgba(235, 203, 107, 0.2);
+        border-color: $primary;
+    }
+
+    &.btn-banner {
+        color: $white;
+    }
+}
+
+.btn-primary {
+    background: $primary;
+    border: 1px solid $primary;
+
+    &:hover, &:active, &:focus,
+     &:not(:disabled):not(.disabled):active, 
+     &:not(:disabled):not(.disabled):active:focus {
+        background: #e8c354;
+        border-color: #e8c354;
+    }
+}
+
+.btn-banner {
+    padding: 17px 36px;
+    border-width: 2px;
+
+    &.btn-secondary {
+        &:hover, &:active, &:focus,
+         &:not(:disabled):not(.disabled):active, 
+         &:not(:disabled):not(.disabled):active:focus {
+            color: $primary;
+        }
+    }
+}
+
+.btn-big {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+
+    @include tablet {
+        padding: 23px 48px;
+    }
+}
+
+.btn-seconda-text {
+    margin-top: 5px;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.btn-black {
+    background: #3a3e47;
+    border-width: 1px;
+    color: $white;
+
+    &:hover {
+        color: $white;
+        background: #5c6371;
+    }
+}
